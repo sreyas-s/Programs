@@ -151,7 +151,7 @@ void val_at_pos(struct node **headref, int pos){
 			}
 		temp=*headref;
 		if(pos>(count+1) || pos<=0){
-			cout<<"Not able to add at position "<<pos<<endl;
+			cout<<"Invalid position "<<pos<<endl;
 			}	
 		else{
 			for(int j=1;j<=pos-1;j++){

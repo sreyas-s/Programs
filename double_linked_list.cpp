@@ -150,7 +150,7 @@ void val_at_pos(struct node **headref, int pos){
 			count=count+1;
 			}
 		temp=*headref;
-		if(pos>(count+1) || pos<=0){
+		if(pos>count || pos<=0){
 			cout<<"Invalid position "<<pos<<endl;
 			}	
 		else{

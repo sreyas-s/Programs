@@ -61,9 +61,15 @@ int main(){
 				count++;
 				}
 			}
-		cout<<"\n after removing duplicate words"<<endl;	
-		for(int i=0;i<=(count-1);i++){
-			cout<<wordfinal[i]<<" ";
+		myfile.open("oupfile.txt", ios::out);
+		if(myfile.is_open()){
+			for(int i=0;i<=(count-1);i++){
+				myfile<<wordfinal[i]<<" ";
+				}
+			myfile.close();
+			}
+		else{
+			cout<<"Output file not opened successfully"<<endl;
 			}
 		
 	}

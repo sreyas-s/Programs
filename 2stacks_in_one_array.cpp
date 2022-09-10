@@ -127,7 +127,7 @@ void popfun2(int *arr, int *top2, int n){
 	else{
 		if(*top2==(n-1)){
 			cout<<"deleted "<<arr[*top2]<<endl;
-			*top2-=1;
+			*top2=-1;
 			}
 		else{
 			//generic case.
